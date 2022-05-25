@@ -1,3 +1,10 @@
 .inicio{
-    padding: 3rem;
+    padding-top: 10rem;
+    padding-inline-start: 32rem;
+}
+body{
+    background-image: url("imagenes/anotador.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: center;
 }

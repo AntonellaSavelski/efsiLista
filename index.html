@@ -7,17 +7,16 @@
         <title>TP Formulario</title>
     </head>
     <body class= "inicio">
-        <form>
-            <div class="form-group ">
-              <label>Escriba la tarea que tiene pendiente: </label>
-              <input type="text" class="form-control" id="tarea" placeholder="Espacio para escribit lo que tenes que hacer">
-            </div>
+        <form >
+            <label style="text-align:center;">Escriba la tarea que tiene pendiente:</label>
+            <input type="text" class="form-control col-md-6" style="align-items:center;" id="item" placeholder="Espacio para escribir lo que tenes que hacer">
         </form>
-        <div>
-            <button type="submit" class="btn btn-primary mb-2" onclick="guardarTarea()">Guardar Tarea</button>
-            <ul id="lista">
-            </ul>
-        </div>
+            <div>
+                <button type="submit" class="btn btn-primary col-md-6 mb-4" onclick="guardarTarea()">Guardar Tarea</button>
+                <ul id="lista" style="list-style-type:none; padding-left: 0px;">
+
+                </ul>
+            </div>
         <script src="funciones.js"></script>
     </body>
 </html>
