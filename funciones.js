@@ -1,23 +1,26 @@
 let arrayTareas=[];
 
 function guardarTarea() {
-    let tarea={
-        titulo: document.getElementById("item").value,
-        estado: false
-    } 
+    let tarea= document.getElementById("item").value;
     arrayTareas.push(tarea)
 
     const node = document.createElement("li");
-    node.innerHTML += `<input type="checkbox"> ${tarea.titulo}</input>`
-    if (tarea.estado=false){
-        node.innerHTML += `style:"text-decoration";"line-through")`;
-    }
+    node.innerHTML += `<input type="checkbox" id="check" onclick="tachar()"> ${tarea}</input>`
+
     document.getElementById("lista").appendChild(node);
 }
 function tachar(){
-        const tarea = document.getElementById("item").value
-        console.log(tarea)
-        if (tarea.checked){
-             $todoText.css("text-decoration","line-through");
-        }      
+    const c = document.getElementById("check").value
+    console.log(c);
+
+    const tarea = document.getElementById("item").value
+    console.log(tarea)
+    /*if (tarea.checked){
+        document.getElementById("item").style.textDecoration='line-through';
+    }*/
+
+    if(c === "on") {
+        document.getElementById("item").style.textDecoration='line-through';
+       
+    }
 }

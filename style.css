@@ -7,3 +7,15 @@ body{
     background-size: 50%;
     background-position-x: center;
 }
+.checked {
+    text-decoration: line-through;
+  }
+
+
+li:checked {
+color:red;
+}
+
+#check:checked{
+color: red;
+}
