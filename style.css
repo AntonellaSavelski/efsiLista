@@ -9,13 +9,9 @@ body{
 }
 .checked {
     text-decoration: line-through;
-  }
-
-
-li:checked {
-color:red;
+    background-color: rgb(127, 255, 110);
+   
 }
-
-#check:checked{
-color: red;
+.notchecked{
+    background-color: rgb(255, 132, 132);
 }
