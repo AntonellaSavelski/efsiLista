@@ -11,7 +11,7 @@ function guardarTarea() {
     
     let ul = document.getElementById("lista")
     ul.innerHTML += `<li><input type="checkbox" id="${num}"onclick="done(id)"> ${tarea.titulo}</input></li>`
-
+    document.getElementById("item").value="";
     num++;
 }
 let done=(id)=>{
