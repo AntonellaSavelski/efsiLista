@@ -10,11 +10,17 @@ body{
 .checked {
     text-decoration: line-through;
     background-color: rgb(127, 255, 110);
-   
+    border-width: 1px;
+    border-style: solid;
+    border-color: green;
 }
 .notchecked{
     background-color: rgb(255, 132, 132);
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkred;
 }
 .texto{
     text-align:center;
 }
+
